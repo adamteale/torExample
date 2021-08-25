@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033CFA5326D41D7800FC87C8 /* TorExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA5226D41D7800FC87C8 /* TorExampleApp.swift */; };
+		033CFA5726D41D7A00FC87C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033CFA5626D41D7A00FC87C8 /* Assets.xcassets */; };
+		033CFA5A26D41D7A00FC87C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033CFA5926D41D7A00FC87C8 /* Preview Assets.xcassets */; };
+		033CFA7026D41DF300FC87C8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6626D41DF300FC87C8 /* HomeViewModel.swift */; };
+		033CFA7126D41DF300FC87C8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6826D41DF300FC87C8 /* HomeView.swift */; };
+		033CFA7226D41DF300FC87C8 /* TorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6A26D41DF300FC87C8 /* TorClient.swift */; };
+		033CFA7326D41DF300FC87C8 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6D26D41DF300FC87C8 /* BaseViewModel.swift */; };
+		033CFA7426D41DF300FC87C8 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6F26D41DF300FC87C8 /* BaseView.swift */; };
+		033CFA7E26D41EA000FC87C8 /* TorExample_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA7D26D41EA000FC87C8 /* TorExample_iOSApp.swift */; };
+		033CFA8226D41EA100FC87C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033CFA8126D41EA100FC87C8 /* Assets.xcassets */; };
+		033CFA8526D41EA100FC87C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033CFA8426D41EA100FC87C8 /* Preview Assets.xcassets */; };
+		033CFA8A26D41ECF00FC87C8 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6D26D41DF300FC87C8 /* BaseViewModel.swift */; };
+		033CFA8B26D41ECF00FC87C8 /* TorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6A26D41DF300FC87C8 /* TorClient.swift */; };
+		033CFA8C26D41ECF00FC87C8 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6F26D41DF300FC87C8 /* BaseView.swift */; };
+		033CFA8D26D41ECF00FC87C8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6626D41DF300FC87C8 /* HomeViewModel.swift */; };
+		033CFA8E26D41ECF00FC87C8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CFA6826D41DF300FC87C8 /* HomeView.swift */; };
+		1435EB2AA936FFB709157C43 /* Pods_TorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2FC56003EACD932E80BD60 /* Pods_TorExample.framework */; };
+		564482CA0A31AA6B57C2B28D /* Pods_TorExample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD58C42BCBABE786FFA8F0D /* Pods_TorExample_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		033CFA7526D41E3400FC87C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		033CFA4F26D41D7800FC87C8 /* TorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033CFA5226D41D7800FC87C8 /* TorExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorExampleApp.swift; sourceTree = "<group>"; };
+		033CFA5626D41D7A00FC87C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		033CFA5926D41D7A00FC87C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		033CFA5B26D41D7A00FC87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033CFA5C26D41D7A00FC87C8 /* TorExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TorExample.entitlements; sourceTree = "<group>"; };
+		033CFA6626D41DF300FC87C8 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		033CFA6826D41DF300FC87C8 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		033CFA6A26D41DF300FC87C8 /* TorClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorClient.swift; sourceTree = "<group>"; };
+		033CFA6D26D41DF300FC87C8 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		033CFA6F26D41DF300FC87C8 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		033CFA7B26D41EA000FC87C8 /* TorExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TorExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		033CFA7D26D41EA000FC87C8 /* TorExample_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorExample_iOSApp.swift; sourceTree = "<group>"; };
+		033CFA8126D41EA100FC87C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		033CFA8426D41EA100FC87C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		033CFA8626D41EA100FC87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3E5CFCB4FC5809EAD1ECBA /* Pods-TorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorExample.release.xcconfig"; path = "Target Support Files/Pods-TorExample/Pods-TorExample.release.xcconfig"; sourceTree = "<group>"; };
+		B774AF37C59110E1042712F9 /* Pods-TorExample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorExample-iOS.debug.xcconfig"; path = "Target Support Files/Pods-TorExample-iOS/Pods-TorExample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C413A7B226244840D02D67DE /* Pods-TorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorExample.debug.xcconfig"; path = "Target Support Files/Pods-TorExample/Pods-TorExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D428F187A7E1134478DDA3D3 /* Pods-TorExample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorExample-iOS.release.xcconfig"; path = "Target Support Files/Pods-TorExample-iOS/Pods-TorExample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DDD58C42BCBABE786FFA8F0D /* Pods_TorExample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorExample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2FC56003EACD932E80BD60 /* Pods_TorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033CFA4C26D41D7800FC87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1435EB2AA936FFB709157C43 /* Pods_TorExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033CFA7826D41EA000FC87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564482CA0A31AA6B57C2B28D /* Pods_TorExample_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033CFA4626D41D7800FC87C8 = {
+			isa = PBXGroup;
+			children = (
+				033CFA5126D41D7800FC87C8 /* TorExample */,
+				033CFA7C26D41EA000FC87C8 /* TorExample-iOS */,
+				033CFA5026D41D7800FC87C8 /* Products */,
+				DF995FB06A4C72A6B7CB6459 /* Pods */,
+				4F5A7CF94DF2F2DA7293548C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		033CFA5026D41D7800FC87C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA4F26D41D7800FC87C8 /* TorExample.app */,
+				033CFA7B26D41EA000FC87C8 /* TorExample-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033CFA5126D41D7800FC87C8 /* TorExample */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6226D41DF300FC87C8 /* Scenes */,
+				033CFA5226D41D7800FC87C8 /* TorExampleApp.swift */,
+				033CFA5626D41D7A00FC87C8 /* Assets.xcassets */,
+				033CFA5B26D41D7A00FC87C8 /* Info.plist */,
+				033CFA5C26D41D7A00FC87C8 /* TorExample.entitlements */,
+				033CFA5826D41D7A00FC87C8 /* Preview Content */,
+			);
+			path = TorExample;
+			sourceTree = "<group>";
+		};
+		033CFA5826D41D7A00FC87C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA5926D41D7A00FC87C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		033CFA6226D41DF300FC87C8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6326D41DF300FC87C8 /* Home */,
+				033CFA6926D41DF300FC87C8 /* Data */,
+				033CFA6B26D41DF300FC87C8 /* Presentation */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		033CFA6326D41DF300FC87C8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6426D41DF300FC87C8 /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		033CFA6426D41DF300FC87C8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6526D41DF300FC87C8 /* ViewModel */,
+				033CFA6726D41DF300FC87C8 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		033CFA6526D41DF300FC87C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6626D41DF300FC87C8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		033CFA6726D41DF300FC87C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6826D41DF300FC87C8 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		033CFA6926D41DF300FC87C8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6A26D41DF300FC87C8 /* TorClient.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		033CFA6B26D41DF300FC87C8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6C26D41DF300FC87C8 /* ViewModel */,
+				033CFA6E26D41DF300FC87C8 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		033CFA6C26D41DF300FC87C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6D26D41DF300FC87C8 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		033CFA6E26D41DF300FC87C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA6F26D41DF300FC87C8 /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		033CFA7C26D41EA000FC87C8 /* TorExample-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA7D26D41EA000FC87C8 /* TorExample_iOSApp.swift */,
+				033CFA8126D41EA100FC87C8 /* Assets.xcassets */,
+				033CFA8626D41EA100FC87C8 /* Info.plist */,
+				033CFA8326D41EA100FC87C8 /* Preview Content */,
+			);
+			path = "TorExample-iOS";
+			sourceTree = "<group>";
+		};
+		033CFA8326D41EA100FC87C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				033CFA8426D41EA100FC87C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F5A7CF94DF2F2DA7293548C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF2FC56003EACD932E80BD60 /* Pods_TorExample.framework */,
+				DDD58C42BCBABE786FFA8F0D /* Pods_TorExample_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF995FB06A4C72A6B7CB6459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C413A7B226244840D02D67DE /* Pods-TorExample.debug.xcconfig */,
+				5A3E5CFCB4FC5809EAD1ECBA /* Pods-TorExample.release.xcconfig */,
+				B774AF37C59110E1042712F9 /* Pods-TorExample-iOS.debug.xcconfig */,
+				D428F187A7E1134478DDA3D3 /* Pods-TorExample-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033CFA4E26D41D7800FC87C8 /* TorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033CFA5F26D41D7A00FC87C8 /* Build configuration list for PBXNativeTarget "TorExample" */;
+			buildPhases = (
+				E2571AE7D9DC5A8EA6B0F6CF /* [CP] Check Pods Manifest.lock */,
+				033CFA4B26D41D7800FC87C8 /* Sources */,
+				033CFA4C26D41D7800FC87C8 /* Frameworks */,
+				033CFA4D26D41D7800FC87C8 /* Resources */,
+				033CFA7526D41E3400FC87C8 /* CopyFiles */,
+				43C8E7438858E1BBC512C79A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorExample;
+			productName = TorExample;
+			productReference = 033CFA4F26D41D7800FC87C8 /* TorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		033CFA7A26D41EA000FC87C8 /* TorExample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033CFA8926D41EA100FC87C8 /* Build configuration list for PBXNativeTarget "TorExample-iOS" */;
+			buildPhases = (
+				10730B6530086FABD59A1FE6 /* [CP] Check Pods Manifest.lock */,
+				033CFA7726D41EA000FC87C8 /* Sources */,
+				033CFA7826D41EA000FC87C8 /* Frameworks */,
+				033CFA7926D41EA000FC87C8 /* Resources */,
+				5ECA96592F50AF7D41E05D53 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TorExample-iOS";
+			productName = "TorExample-iOS";
+			productReference = 033CFA7B26D41EA000FC87C8 /* TorExample-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033CFA4726D41D7800FC87C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					033CFA4E26D41D7800FC87C8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					033CFA7A26D41EA000FC87C8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 033CFA4A26D41D7800FC87C8 /* Build configuration list for PBXProject "TorExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 033CFA4626D41D7800FC87C8;
+			productRefGroup = 033CFA5026D41D7800FC87C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033CFA4E26D41D7800FC87C8 /* TorExample */,
+				033CFA7A26D41EA000FC87C8 /* TorExample-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033CFA4D26D41D7800FC87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033CFA5A26D41D7A00FC87C8 /* Preview Assets.xcassets in Resources */,
+				033CFA5726D41D7A00FC87C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033CFA7926D41EA000FC87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033CFA8526D41EA100FC87C8 /* Preview Assets.xcassets in Resources */,
+				033CFA8226D41EA100FC87C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10730B6530086FABD59A1FE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TorExample-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43C8E7438858E1BBC512C79A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorExample/Pods-TorExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorExample/Pods-TorExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TorExample/Pods-TorExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ECA96592F50AF7D41E05D53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorExample-iOS/Pods-TorExample-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorExample-iOS/Pods-TorExample-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TorExample-iOS/Pods-TorExample-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2571AE7D9DC5A8EA6B0F6CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TorExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033CFA4B26D41D7800FC87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033CFA7226D41DF300FC87C8 /* TorClient.swift in Sources */,
+				033CFA7126D41DF300FC87C8 /* HomeView.swift in Sources */,
+				033CFA7026D41DF300FC87C8 /* HomeViewModel.swift in Sources */,
+				033CFA7426D41DF300FC87C8 /* BaseView.swift in Sources */,
+				033CFA5326D41D7800FC87C8 /* TorExampleApp.swift in Sources */,
+				033CFA7326D41DF300FC87C8 /* BaseViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033CFA7726D41EA000FC87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033CFA7E26D41EA000FC87C8 /* TorExample_iOSApp.swift in Sources */,
+				033CFA8A26D41ECF00FC87C8 /* BaseViewModel.swift in Sources */,
+				033CFA8B26D41ECF00FC87C8 /* TorClient.swift in Sources */,
+				033CFA8E26D41ECF00FC87C8 /* HomeView.swift in Sources */,
+				033CFA8D26D41ECF00FC87C8 /* HomeViewModel.swift in Sources */,
+				033CFA8C26D41ECF00FC87C8 /* BaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		033CFA5D26D41D7A00FC87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		033CFA5E26D41D7A00FC87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		033CFA6026D41D7A00FC87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C413A7B226244840D02D67DE /* Pods-TorExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TorExample/TorExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TorExample/Preview Content\"";
+				DEVELOPMENT_TEAM = K26FPJ2QVZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamteale.TorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		033CFA6126D41D7A00FC87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3E5CFCB4FC5809EAD1ECBA /* Pods-TorExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TorExample/TorExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TorExample/Preview Content\"";
+				DEVELOPMENT_TEAM = K26FPJ2QVZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamteale.TorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		033CFA8726D41EA100FC87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B774AF37C59110E1042712F9 /* Pods-TorExample-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TorExample-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = K26FPJ2QVZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TorExample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamteale.TorExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033CFA8826D41EA100FC87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D428F187A7E1134478DDA3D3 /* Pods-TorExample-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TorExample-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = K26FPJ2QVZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TorExample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamteale.TorExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033CFA4A26D41D7800FC87C8 /* Build configuration list for PBXProject "TorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033CFA5D26D41D7A00FC87C8 /* Debug */,
+				033CFA5E26D41D7A00FC87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033CFA5F26D41D7A00FC87C8 /* Build configuration list for PBXNativeTarget "TorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033CFA6026D41D7A00FC87C8 /* Debug */,
+				033CFA6126D41D7A00FC87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033CFA8926D41EA100FC87C8 /* Build configuration list for PBXNativeTarget "TorExample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033CFA8726D41EA100FC87C8 /* Debug */,
+				033CFA8826D41EA100FC87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033CFA4726D41D7800FC87C8 /* Project object */;
+}

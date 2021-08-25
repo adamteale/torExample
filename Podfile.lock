@@ -1,0 +1,120 @@
+PODS:
+  - CGRPCZlib (1.0.0)
+  - CNIOAtomics (2.28.0)
+  - CNIOBoringSSL (2.12.0)
+  - CNIOBoringSSLShims (2.12.0):
+    - CNIOBoringSSL (= 2.12.0)
+  - CNIODarwin (2.28.0)
+  - CNIOHTTPParser (2.28.0)
+  - CNIOLinux (2.28.0)
+  - CNIOWindows (2.28.0)
+  - gRPC-Swift (1.0.0):
+    - CGRPCZlib (= 1.0.0)
+    - Logging (< 2.0.0, >= 1.4.0)
+    - SwiftNIO (< 3.0.0, >= 2.22.0)
+    - SwiftNIOExtras (< 2.0.0, >= 1.4.0)
+    - SwiftNIOHTTP2 (< 2.0.0, >= 1.16.1)
+    - SwiftNIOSSL (< 3.0.0, >= 2.8.0)
+    - SwiftNIOTransportServices (< 2.0.0, >= 1.6.0)
+    - SwiftProtobuf (< 2.0.0, >= 1.9.0)
+  - Logging (1.4.0)
+  - SwiftNIO (2.28.0):
+    - CNIODarwin (= 2.28.0)
+    - CNIOLinux (= 2.28.0)
+    - CNIOWindows (= 2.28.0)
+    - SwiftNIOConcurrencyHelpers (= 2.28.0)
+  - SwiftNIOConcurrencyHelpers (2.28.0):
+    - CNIOAtomics (= 2.28.0)
+  - SwiftNIOExtras (1.8.0):
+    - SwiftNIO (< 3, >= 2.9.0)
+  - SwiftNIOFoundationCompat (2.28.0):
+    - SwiftNIO (= 2.28.0)
+  - SwiftNIOHPACK (1.17.0):
+    - SwiftNIO (< 3, >= 2.27.0)
+    - SwiftNIOConcurrencyHelpers (< 3, >= 2.27.0)
+    - SwiftNIOHTTP1 (< 3, >= 2.27.0)
+  - SwiftNIOHTTP1 (2.28.0):
+    - CNIOHTTPParser (= 2.28.0)
+    - SwiftNIO (= 2.28.0)
+    - SwiftNIOConcurrencyHelpers (= 2.28.0)
+  - SwiftNIOHTTP2 (1.17.0):
+    - SwiftNIO (< 3, >= 2.27.0)
+    - SwiftNIOConcurrencyHelpers (< 3, >= 2.27.0)
+    - SwiftNIOHPACK (= 1.17.0)
+    - SwiftNIOHTTP1 (< 3, >= 2.27.0)
+    - SwiftNIOTLS (< 3, >= 2.27.0)
+  - SwiftNIOSSL (2.12.0):
+    - CNIOBoringSSL (= 2.12.0)
+    - CNIOBoringSSLShims (= 2.12.0)
+    - SwiftNIO (< 3, >= 2.15.0)
+    - SwiftNIOConcurrencyHelpers (< 3, >= 2.15.0)
+    - SwiftNIOTLS (< 3, >= 2.15.0)
+  - SwiftNIOTLS (2.28.0):
+    - SwiftNIO (= 2.28.0)
+  - SwiftNIOTransportServices (1.10.0):
+    - SwiftNIO (< 3, >= 2.27.0)
+    - SwiftNIOConcurrencyHelpers (< 3, >= 2.27.0)
+    - SwiftNIOFoundationCompat (< 3, >= 2.27.0)
+    - SwiftNIOTLS (< 3, >= 2.27.0)
+  - SwiftProtobuf (1.17.0)
+  - Tor (405.8.1)
+
+DEPENDENCIES:
+  - gRPC-Swift (~> 1.0.0)
+  - Tor (from `https://raw.githubusercontent.com/iCepa/Tor.framework/v405.8.1/Tor.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - CGRPCZlib
+    - CNIOAtomics
+    - CNIOBoringSSL
+    - CNIOBoringSSLShims
+    - CNIODarwin
+    - CNIOHTTPParser
+    - CNIOLinux
+    - CNIOWindows
+    - gRPC-Swift
+    - Logging
+    - SwiftNIO
+    - SwiftNIOConcurrencyHelpers
+    - SwiftNIOExtras
+    - SwiftNIOFoundationCompat
+    - SwiftNIOHPACK
+    - SwiftNIOHTTP1
+    - SwiftNIOHTTP2
+    - SwiftNIOSSL
+    - SwiftNIOTLS
+    - SwiftNIOTransportServices
+    - SwiftProtobuf
+
+EXTERNAL SOURCES:
+  Tor:
+    :podspec: https://raw.githubusercontent.com/iCepa/Tor.framework/v405.8.1/Tor.podspec
+
+SPEC CHECKSUMS:
+  CGRPCZlib: b0c9d704a12fa667f1824ffff20688f191945989
+  CNIOAtomics: 7c3a151d54ae24b0160283ac93e3b06380ce6973
+  CNIOBoringSSL: 2433ef7bb7f34e0903f576771c3004b42a8c30df
+  CNIOBoringSSLShims: 97f8c084e74a2d2f7e3bfa1695e4a0c7e1e7ecc5
+  CNIODarwin: 1f2dbfef00b0f1dde67f1512d2ad27c51089e9de
+  CNIOHTTPParser: bd3b3557a2091cb5b24cbf1a676157804a563fda
+  CNIOLinux: 21957f4cd9b4efa7e0b835c41977f6f71647653c
+  CNIOWindows: 93ad715b3bb3da30e1843148fe40429de1ed1ae9
+  gRPC-Swift: 77154009a019e97f8c4bd8f2bb75fe9726801157
+  Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  SwiftNIO: 3e69d2a1be36921d5676ad0aa148fe7c537a89fd
+  SwiftNIOConcurrencyHelpers: 68e0316a976c0d109373017a909b741cc82963d5
+  SwiftNIOExtras: aa561b71020cd6844f722cf4513fb176c577414d
+  SwiftNIOFoundationCompat: 54f7dc46a55b2ae635d25e05e0ce1ab3b96c5a5e
+  SwiftNIOHPACK: 7b780cf61fa41025042ca34a3918b651c3c9f655
+  SwiftNIOHTTP1: 604d76673dfaece86a7f23075c620bdca7f30362
+  SwiftNIOHTTP2: 57fc74b454df553028744b8e4cd0ab3a33911a2d
+  SwiftNIOSSL: 6a212ff5802c39cdee830c613501fcb414218427
+  SwiftNIOTLS: 3b943c5ec04773df1f88eb63cebb015df11071bb
+  SwiftNIOTransportServices: eee29d06a617e6b37c534d8589ae27c31b119f81
+  SwiftProtobuf: 9c85136c6ba74b0a1b84279dbf0f6db8efb714e0
+  Tor: fad2cec0e7ef5f889fecdaf69e5edd6df0438326
+
+PODFILE CHECKSUM: 8c2884c6d75f6c0b320099452784c9279174ec4c
+
+COCOAPODS: 1.10.0
