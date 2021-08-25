@@ -24,8 +24,6 @@ final class TorClient {
         setup()
     }
 
-
-
     private func setup() {
 
         let authDirPath = createAuthDirectory()
@@ -216,7 +214,7 @@ final class TorClient {
         })
     }
 
-    func addObserverForCircuitEstablished(observer: @escaping ((String) -> Void) ) {
+    func addObserverForCircuitEstablished(observer: @escaping ((TorLogEntry) -> Void) ) {
         torController?.addObserver(forStatusEvents: { a, b, c, d in
 
             print(a)
@@ -226,14 +224,15 @@ final class TorClient {
 
             if let d = d {
                 if let tag = d["TAG"],
-                   let summary = d["SUMMARY"] {
+                   let summary = d["SUMMARY"],
+                   let progress = d["PROGRESS"] {
                     DispatchQueue.main.async {
-                        observer("\(summary.replacingOccurrences(of: "\"", with: "")) (\(tag))")
-                    }
-                }
-                if let progress = d["PROGRESS"] {
-                    DispatchQueue.main.async {
-                        observer("Bootstrapped: \(progress)%")
+                        observer(
+                            TorLogEntry(
+                                title: "\(summary.replacingOccurrences(of: "\"", with: "")) (\(tag))",
+                                detail: "Bootstrapped: \(progress)%"
+                            )
+                        )
                     }
                 }
             }
@@ -241,4 +240,9 @@ final class TorClient {
         })
     }
 
+}
+
+struct TorLogEntry {
+    let title: String
+    let detail: String
 }

@@ -20,6 +20,7 @@ struct HomeView: View {
                         Button("Make request over tor", action: {
                             viewModel.testConnection()
                         })
+                        .disabled(viewModel.loading)
                         .frame(
                             idealWidth: geometry.size.width,
                             maxWidth: geometry.size.width
@@ -32,7 +33,7 @@ struct HomeView: View {
                     ScrollView {
                         ScrollViewReader { value in
                             ForEach(viewModel.logEntries) { logEntry in
-                                Text(logEntry.text)
+                                view(for: logEntry)
                                     .id(logEntry.id)
                                     .lineLimit(nil)
                                     .frame(
@@ -52,14 +53,28 @@ struct HomeView: View {
                 .navigationBarTitle(Text("Umbrel"))
                 .navigationBarItems(
                     trailing: Group {
-                    if viewModel.loading {
-                        ProgressView()
-                    }
-                })
+                        if viewModel.loading {
+                            ProgressView()
+                        }
+                    })
             }
         }
     }
 
+    @ViewBuilder
+    func view(for logEntry: LogEntry) -> some View {
+        switch logEntry.entryType {
+        case .title:
+            Text(logEntry.text)
+                .font(.system(size: 12, weight: .semibold, design: .monospaced))
+        case .detail:
+            Text(logEntry.text)
+                .font(.system(size: 12, weight: .regular, design: .monospaced))
+        case .awesome:
+            Text(logEntry.text)
+                .font(.system(size: 18, weight: .semibold, design: .monospaced))
+        }
+    }
 }
 
 

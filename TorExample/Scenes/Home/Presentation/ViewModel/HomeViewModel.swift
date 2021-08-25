@@ -7,9 +7,16 @@
 
 import Foundation
 
+enum LogEntryType {
+    case title
+    case detail
+    case awesome
+}
+
 struct LogEntry: Identifiable, Equatable {
     var id: UUID
     let text: String
+    let entryType: LogEntryType
 }
 
 final class HomeViewModel: BaseViewModel {
@@ -23,11 +30,15 @@ final class HomeViewModel: BaseViewModel {
         loading = true
         torClient.addObserverForCircuitEstablished { [weak self] in
             self?.loading = false
-            self?.logEntries.append(LogEntry(id: UUID(), text: "\n\nCircuit established.✅\n\n"))
+            self?.logEntries.append(LogEntry(id: UUID(), text: "\nCircuit established.✅\n", entryType: .awesome))
         }
-        torClient.addObserverForCircuitEstablished { [weak self] text in
-            self?.logEntries.append(LogEntry(id: UUID(), text: text))
-            debugPrint(text)
+        torClient.addObserverForCircuitEstablished { [weak self] torLogEntry in
+            self?.logEntries.append(
+                LogEntry(id: UUID(), text: torLogEntry.title, entryType: .title)
+            )
+            self?.logEntries.append(
+                LogEntry(id: UUID(), text: torLogEntry.detail, entryType: .detail)
+            )
         }
     }
 
@@ -35,12 +46,14 @@ final class HomeViewModel: BaseViewModel {
 
         guard let url = URL(string: "http://bpcquxqcswqmb4h37ckcb5yuis644766qunwblshw7cz7khmyc4kbaad.onion/test") else { return }
 
-        logEntries.append(LogEntry(id: UUID(), text: "Request:\n\(url.absoluteString)"))
+        logEntries.append(LogEntry(id: UUID(), text: "\nRequest:", entryType: .title))
+        logEntries.append(LogEntry(id: UUID(), text: "\n\(url.absoluteString)", entryType: .detail))
 
         loading = true
         torClient.requestTest(url: url) { [weak self] text in
             self?.loading = false
-            self?.logEntries.append(LogEntry(id: UUID(), text: "Response:\n\(text)\n"))
+            self?.logEntries.append(LogEntry(id: UUID(), text: "\nResponse:", entryType: .title))
+            self?.logEntries.append(LogEntry(id: UUID(), text: "\n\(text)", entryType: .detail))
         }
     }
 }
